@@ -1,0 +1,214 @@
+/*fonts*/
+@font-face {
+    font-family: modius;
+    src: url(assets/Modius\ Regular.otf);
+}
+
+@font-face {
+    font-family: platea;
+    src: url(assets/Plateia\ Bold.ttf);
+}
+
+@font-face {
+    font-family: bebas;
+    src: url(assets/Bebas-Regular.ttf);
+}
+
+body{
+    background-color: rgb(26, 26, 26);
+    margin: 0px;
+
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page {
+    padding: 25px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.navLinks {
+    text-align: center;
+}
+
+.navLinks a {
+    list-style: none;
+    padding: 15px;
+}
+
+.navLinks button {
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 5px 15px;
+    transition: all 0.3s ease 0s
+}
+
+.navLinks button {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    font-family: modius;
+    font-size: 11px;
+}
+
+.navLinks button:hover {
+    border-color: white;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 3px 8px;
+}
+
+/* page content controls*/
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 100px;
+}
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    align-content: center;
+}
+
+.container {
+    max-width: 100vw;
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.container div {
+    padding: 15px;
+    border: none;
+}
+
+.root-header {
+    font-family: platea;
+    font-size: 20px;
+    color: rgb(26, 211, 224);
+}
+
+.h-1 {
+    text-align: center;
+    grid-column-end: span 4;
+}
+
+/*input fields styling*/
+
+.root-content {
+    color: white;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.cont {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.calcBtn {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.root-outputVal {
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    padding: 1px;
+}
+
+.monthlyPayment, .hrsDisplay, .storageDisplay, .measureDisplay, .dimensionDisplay {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: span 6;
+}
+
+.interestVal {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: span 2;
+}
+
+.amountVal {
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: span 2;
+}
+
+.total-title {
+    font-size: 15px;
+    font-family: monospace;
+}
+
+/*ID fields styling*/
+
+#calc {
+    font-family: bebas;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    outline: none;
+
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px;
+    transition: all 0.3s ease 0s
+}
+
+#calc:hover {
+    border-color: rgb(129, 8, 8);
+    color: rgb(238, 18, 18);
+    font-size: 12px;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.inputs {
+    background: none;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 50px;
+    padding: 8px 10px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    font-family: monospace;
+    width: 225px;
+    transition: .3s ease 0s;
+}
+
+.inputs:hover {
+    border-color: rgb(255, 255, 255);
+    width: 250px;
+    font-size: 20px;
+}
+
+
+

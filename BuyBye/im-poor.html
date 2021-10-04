@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Buy Bye Installments</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <section class="page">
+                <div class="navbar">
+                    <ul class="navLinks">
+                        <a href="index.html"><button>Home</button></a>
+                        <a href="im-poor.html"><button>Installments</button></a>
+                        <a href="hours-battery-life.html"><button>Battery Life</button></a>
+                        <a href="storage-approx.html"><button>Storage Capacity</button></a>
+                        <a href="english-units.html"><button>Units</button></a>
+                        <a href="dimensions.html"><button>Dimentions</button></a>
+                   </ul>
+                </div>
+                <div class="container">
+                    <div class="root-header h-1">Installment Estimator tool</div>
+
+                    <div class="root-content cont">
+                        <p>Principal amount</p>
+                        <input class="inputs" id="principalAmount" type="text">
+                    </div>
+                    <div class="root-content cont">
+                        <p>Interest Rate in percent %</p>
+                        <input class="inputs" id="interestRate" type="text">
+                    </div>
+                    <div class="root-content cont">
+                        <p>Number of months to pay</p>
+                        <input class="inputs" id="monthlyInstallments" type="text">
+                    </div>
+                    <div class="calcBtn">
+                        <Button type="button" id="calc" onclick="solveEMI()">Calculate Now</Button>
+                    </div>
+                    <div class="root-outputVal monthlyPayment">
+                        <p class="total-title">Monthly Payment</p>
+                        <div id="monthlyPayment">0</div>
+                    </div>
+                    <div class="root-outputVal amountVal">
+                        <p class="total-title">Total Amount</p>
+                        <div id="totalAmountPd">0</div>
+                    </div>
+                    <div class="root-outputVal interestVal">
+                        <p class="total-title">Total Interest</p>
+                        <div id="totalInterestPd">0</div>
+                    </div>
+                </div>
+            </section>
+    </body>
+     <script src="index-main.js">
+     </script>
+</html>
+
+

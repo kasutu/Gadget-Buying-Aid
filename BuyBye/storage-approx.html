@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BuyBye Storage Capacity tool</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <section class="page home">
+                <div class="navbar">
+                    <ul class="navLinks">
+                        <a href="index.html"><button>Home</button></a>
+                        <a href="im-poor.html"><button>Installments</button></a>
+                        <a href="hours-battery-life.html"><button>Battery Life</button></a>
+                        <a href="storage-approx.html"><button>Storage Capacity</button></a>
+                        <a href="english-units.html"><button>Units</button></a>
+                        <a href="dimensions.html"><button>Dimentions</button></a>
+                   </ul>
+                </div>
+                <div class="container">
+                    <div class="root-header h-1">Storage Estimator</div>
+
+                    <div class="root-content cont">
+                        <p>Front camera Mega Pixels</p>
+                        <input class="inputs" id="frontCam" type="text">
+                    </div>
+                    <div class="root-content cont">
+                        <p>Rear camera Mega Pixels</p>
+                        <input class="inputs" id="rearCam" type="text">
+                    </div>
+                    <div class="root-content cont">
+                        <p>Preffered storage size (GB)</p>
+                        <input class="inputs" id="storageSize" type="text">
+                    </div>
+
+                    <div class="calcBtn">
+                        <Button type="button" id="calc" onclick="storageEstimate()">Calculate Now</Button>
+                    </div>
+
+                    <div class="root-outputVal storageDisplay">
+
+                        <div id="displayStorage">00GB</div>
+                        <p class="total-title">GB of storage would allow you tu store:</p>
+
+                        <div id="displayRearCam">00</div>
+                        <p class="total-title">Rear camera pics</p>
+
+                        <div id="displaySelfies">00</div>
+                        <p class="total-title">Selfies</p>
+                        
+                        <div id="displayVid720">00</div>
+                        <p class="total-title">minutes of 720p videos</p>
+                        
+                        <div id="displayVid1080">00</div>
+                        <p class="total-title">minutes of 1080p vids</p>
+
+                        <div id="displayVid4k">00</div>
+                        <p class="total-title">minutes of 4k footage</p>
+                    </div>
+                </div>
+                
+            </section>
+    </body>
+    <script src="index-main.js"></script>
+</html>
+
